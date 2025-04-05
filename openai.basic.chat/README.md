@@ -7,8 +7,8 @@ Application to demonstrate the Spring AI integration with OpenAI and perform a s
 - Obtain the API key from your OpenAI account
 
 ### Run Command
-****mvn spring-boot:run -Dspring-boot.run.arguments="--OPENAI_API_KEY=<?>"
+****mvn spring-boot:run -Dspring-boot.run.arguments="--OPENAI_API_KEY=<?>"****
 
-**Replace the "<?>" with your Open AI API Key.
+Replace the "**<?>**" placeholder with your Open AI API Key.
 
 
