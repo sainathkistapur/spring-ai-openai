@@ -1,4 +1,4 @@
-# spring-ai-openai - Structured Output Converter
+# spring-ai-openai - Structured Output Converter - Map Output Converter
 
 Application to demonstrate the Spring AI integration with OpenAI and perform a simple prompt operation that converts the response to a simple Map using `MapOutputConverter`.
 
@@ -23,12 +23,12 @@ curl --location --request GET 'http://localhost:8080/springai/openai/prompt/simp
 --data-raw 'List top 5 happiest countries in the world'
 ```
 
-**Step 1:** Now check how the application responds with the Map converter
+**Step 2:** Now check how the application responds with the Map converter
 cURL
 ```
-curl --location --request GET 'http://localhost:8080/springai/openai/prompt/simple/with-list-converter' \
+curl --location --request GET 'http://localhost:8080/springai/openai/prompt/simple/with-map-converter' \
 --header 'Content-Type: text/plain' \
---data-raw 'List top 5 happiest countries in the world'
+--data-raw 'List top 5 happiest countries in the world with their name and total population'
 ```
 
 
