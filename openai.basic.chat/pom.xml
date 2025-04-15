@@ -12,7 +12,7 @@
 	<artifactId>openai.basic.chat</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>openai.basic.chat</name>
-	<description>Demo project for basic chat using Spring AI and Open AI</description>
+	<description>Demo project for basic chat using Spring AI and OpenAI</description>
 	<url/>
 	<licenses>
 		<license/>
