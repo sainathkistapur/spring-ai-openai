@@ -1,4 +1,4 @@
-# spring-ai-openai - Basic Chat
+# spring-ai-openai - Structured Output Converter
 
 Application to demonstrate the Spring AI integration with OpenAI and perform a simple prompt operation that converts the response to a simple list using `ListOutputConverter`.
 
