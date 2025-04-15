@@ -20,7 +20,7 @@ cURL
 ```
 curl --location --request GET 'http://localhost:8080/springai/openai/prompt/simple' \
 --header 'Content-Type: text/plain' \
---data-raw 'List top 5 happiest countries in the world'
+--data-raw 'List top 5 happiest countries in the world with their name and total population'
 ```
 
 **Step 2:** Now check how the application responds with the Map converter

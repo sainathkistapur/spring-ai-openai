@@ -22,7 +22,7 @@ curl --location --request GET 'http://localhost:8080/springai/openai/prompt/simp
 --data-raw 'List top 5 career achievements of Tom Cruise.'
 ```
 
-**Step 1:** Now check how the application responds with the bean converter
+**Step 2:** Now check how the application responds with the bean converter
 cURL
 ```
 curl --location --request GET 'http://localhost:8080/springai/openai/prompt/simple/with-bean-converter' \

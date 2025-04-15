@@ -23,7 +23,7 @@ curl --location --request GET 'http://localhost:8080/springai/openai/prompt/simp
 --data-raw 'List top 5 happiest countries in the world'
 ```
 
-**Step 1:** Now check how the application responds with the list converter
+**Step 2:** Now check how the application responds with the list converter
 cURL
 ```
 curl --location --request GET 'http://localhost:8080/springai/openai/prompt/simple/with-list-converter' \
