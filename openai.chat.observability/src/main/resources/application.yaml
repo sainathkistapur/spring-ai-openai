@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: springai.openai.basic.chat
+
+  threads:
+    virtual:
+      enabled: true
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-4.1-nano
+
+  docker:
+    compose:
+      lifecycle-management: start_only
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+  tracing:
+    sampling:
+      probability: 1
