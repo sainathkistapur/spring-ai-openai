@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "912cb09d-195f-425a-a51a-7cf0618bc346",
+		"name": "spring-ai-openai-with-map-converter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Simple-Prompt",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "List top 5 happiest countries in the world"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/prompt/simple",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"prompt",
+						"simple"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prompt-With-Map-Converter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "List top 5 happiest countries in the world"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/prompt/simple/with-map-converter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"prompt",
+						"simple",
+						"with-map-converter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
