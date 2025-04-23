@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/springai/openai/advisors")
 @RequiredArgsConstructor
 @Slf4j
-public class BasicChatForObservabilityTestController {
+public class BasicChatForAdvisorsTestController {
 
     private final ChatClient loggingAdvisorChatClient;
 
