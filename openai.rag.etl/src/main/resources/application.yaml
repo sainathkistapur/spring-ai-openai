@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: springai.openai.rag.etl
+
+  threads:
+    virtual:
+      enabled: true
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-4.1-nano
+    vectorstore:
+      pgvector:
+        index-type: HNSW
+        distance-type: COSINE_DISTANCE
+        initialize-schema: true
+        dimensions: 1536
+        batching-strategy: TOKEN_COUNT # Optional: Controls how documents are batched for embedding
+        max-document-batch-size: 10000 # Optional: Maximum number of documents per batch
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: myuser
+    password: secret
+
+  docker:
+    compose:
+      lifecycle-management: START_AND_STOP
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
