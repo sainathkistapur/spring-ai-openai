@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "5e147775-76bf-481f-ba8d-cb4aae10544f",
+		"name": "spring-ai-openai-rag-pgvector",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Basic-Chat-Without-Rag",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "summaries Economic & Fiscal Outlook the SPRING STATEMENT 2025 UK"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/pgvector/without-rag-context",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"pgvector",
+						"without-rag-context"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic-Chat-With-Rag-Prompt-Template",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "what is the Public sector net financial liabilities1 in 2024 from SPRING STATEMENT 2025 UK"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/pgvector/with-rag-prompt-template",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"pgvector",
+						"with-rag-prompt-template"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic-Chat-With-Rag-QA-Advisor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "what is the Public sector net financial liabilities1 in 2024 from SPRING STATEMENT 2025 UK"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/pgvector/with-rag-qa-advisor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"pgvector",
+						"with-rag-qa-advisor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic-Chat-With-Rag-Rag-Advisor",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "what is the Public sector net financial liabilities1 in 2024 from SPRING STATEMENT 2025 UK"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/pgvector/with-rag-rag-advisor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"pgvector",
+						"with-rag-rag-advisor"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
