@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "91fa32fd-0712-4f4f-9888-05cbc8ca0375",
+		"name": "spring-ai-openai-rag-etl",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clear-Vector-Store",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/etl/json-etl/clear-vector",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"etl",
+						"json-etl",
+						"clear-vector"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-Vector-Count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/etl/json-etl/vector-count",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"etl",
+						"json-etl",
+						"vector-count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Json-ETL-Without-Transformer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/etl/json-etl/without-transformer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"etl",
+						"json-etl",
+						"without-transformer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Json-ETL-With-Transformer",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/etl/json-etl/with-transformer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"etl",
+						"json-etl",
+						"with-transformer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Json-ETL-With-Transformer-And-Enricher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/etl/json-etl/with-transformer-keyword-enricher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"etl",
+						"json-etl",
+						"with-transformer-keyword-enricher"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Json-ETL-With-Transformer-Keyword-Summary-Enricher",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/etl/json-etl/with-transformer-keyword-and-summary-enricher",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"etl",
+						"json-etl",
+						"with-transformer-keyword-and-summary-enricher"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
