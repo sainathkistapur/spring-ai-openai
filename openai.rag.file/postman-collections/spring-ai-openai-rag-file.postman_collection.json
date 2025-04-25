@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "e8c8e458-5489-4097-b61b-29e44a4840c4",
+		"name": "spring-ai-openai-rag-file",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Basic-Chat-Without-Rag",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "What is CrystalComABC?"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/file/without-rag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"file",
+						"without-rag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic-Chat-With-Rag",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "What is CrystalComABC?"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/rag/file/with-rag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"rag",
+						"file",
+						"with-rag"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
