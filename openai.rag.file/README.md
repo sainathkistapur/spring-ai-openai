@@ -4,7 +4,7 @@ Application to demonstrate the Spring AI - RAG - Using vector store as file (`Si
 
 ## How the application works
 - A PDF Company Profile file that was created purely based on a dummy company name whose information doesn't exit in the OpenAI
-- We the application start it reads the PDF file from the resources folded to generate the vector embedding and persist the vector store to a file in the application folder `vector-store.json`
+- When the application start it reads the PDF file from the resources folded to generate the vector embedding and persist the vector store to a file in the application folder `vector-store.json`
 - When we send a basic prompt to the OpenAI requesting about the dummy company it will reply back with information found.
 - When we send a prompt along with the RAG context (i.e. the vector store) OpenAI will respond back with proper information that is in the PDF file.
 
