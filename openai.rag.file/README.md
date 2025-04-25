@@ -40,7 +40,7 @@ curl --location --request GET 'http://localhost:8080/springai/openai/rag/file/wi
 ```
 **Note:** You can open the company profile PDF file in the resources file and ask question based on the that.
 Response:
-- You will not start getting the information about the dummy company. 
+- You will now start getting the information about the dummy company. 
 
 ##### cURL - Scenario 3: Basic prompt with providing the RAG context. More detailed question
 ```
