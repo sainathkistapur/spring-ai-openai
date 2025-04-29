@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: springai.openai.multimodel.text.to.image
+
+  threads:
+    virtual:
+      enabled: true
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
