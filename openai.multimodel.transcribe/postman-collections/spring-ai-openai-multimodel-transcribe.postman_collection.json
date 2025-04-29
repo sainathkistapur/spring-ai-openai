@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "29dcfe7f-4422-4096-b039-a70b799d3258",
+		"name": "spring-ai-openai-multimodel-transcribe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Transcribe-Audio",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/multimodel/transcribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"multimodel",
+						"transcribe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
