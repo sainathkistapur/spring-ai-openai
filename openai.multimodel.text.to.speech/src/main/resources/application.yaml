@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springai.openai.multimodel.text.to.speech
+
+  threads:
+    virtual:
+      enabled: true
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      speech:
+        options:
+          voice: echo
