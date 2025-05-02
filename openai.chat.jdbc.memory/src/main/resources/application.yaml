@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: springai.openai.chat.in.memory
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-4o
