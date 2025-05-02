@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "bc241972-9d06-4f99-ac83-0e98456a4e62",
+		"name": "spring-ai-openai-chat-in-memory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Chat-No-Memory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "My name is John"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/chat/in-memory/prompt-with-no-memory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"chat",
+						"in-memory",
+						"prompt-with-no-memory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Chat-With-Memory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "What is my name?"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/chat/in-memory/prompt-with-in-memory",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"chat",
+						"in-memory",
+						"prompt-with-in-memory"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
