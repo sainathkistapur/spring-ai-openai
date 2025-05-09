@@ -22,4 +22,7 @@ curl --location --request GET 'http://localhost:8080/springai/openai/basic-chat'
 --data-raw 'What is chatGPT?'
 ```
 
+### References
+-  [Spring AI](https://docs.spring.io/spring-ai/reference/1.0/api/chat/openai-chat.html)
+
 
