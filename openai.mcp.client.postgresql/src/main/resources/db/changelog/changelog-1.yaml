@@ -1,0 +1,211 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: DEV
+      preConditions:
+        - onFail: MARK_RAN
+          not:
+            tableExists:
+              tableName: account
+      changes:
+        - createTable:
+            tableName: account
+            columns:
+              - column:
+                  name: id
+                  type: SERIAL
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+
+              - column:
+                  name: firstname
+                  type: VARCHAR(150)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: lastname
+                  type: VARCHAR(150)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: username
+                  type: VARCHAR(100)
+                  constraints:
+                    nullable: false
+                    unique: true
+
+              - column:
+                  name: password
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: email
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+
+              - column:
+                  name: dob
+                  type: DATE
+
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+                  constraints:
+                    nullable: false
+
+              - column:
+                  name: last_login
+                  type: TIMESTAMP
+
+
+  - changeSet:
+      id: 2
+      author: DEV
+      changes:
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: firstname
+                  value: "John"
+              - column:
+                  name: lastname
+                  value: "Doe"
+              - column:
+                  name: username
+                  value: "johndoe"
+              - column:
+                  name: password
+                  value: "password123"
+              - column:
+                  name: email
+                  value: "johndoe@example.com"
+              - column:
+                  name: dob
+                  value: "1990-01-15"
+              - column:
+                  name: created_at
+                  valueDate: "2025-05-10T10:00:00"
+              - column:
+                  name: last_login
+                  valueDate: "2025-05-10T11:00:00"
+
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: firstname
+                  value: "Jane"
+              - column:
+                  name: lastname
+                  value: "Smith"
+              - column:
+                  name: username
+                  value: "janesmith"
+              - column:
+                  name: password
+                  value: "securepass"
+              - column:
+                  name: email
+                  value: "janesmith@example.com"
+              - column:
+                  name: dob
+                  value: "1985-07-23"
+              - column:
+                  name: created_at
+                  valueDate: "2025-05-10T10:30:00"
+              - column:
+                  name: last_login
+                  valueDate: "2025-05-10T11:30:00"
+
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: firstname
+                  value: "David"
+              - column:
+                  name: lastname
+                  value: "Brown"
+              - column:
+                  name: username
+                  value: "davidbrown"
+              - column:
+                  name: password
+                  value: "david2025"
+              - column:
+                  name: email
+                  value: "davidbrown@example.com"
+              - column:
+                  name: dob
+                  value: "1992-03-12"
+              - column:
+                  name: created_at
+                  valueDate: "2025-05-10T11:00:00"
+              - column:
+                  name: last_login
+                  valueDate: "2025-05-10T12:00:00"
+
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: firstname
+                  value: "Emma"
+              - column:
+                  name: lastname
+                  value: "Wilson"
+              - column:
+                  name: username
+                  value: "emmawilson"
+              - column:
+                  name: password
+                  value: "emma1234"
+              - column:
+                  name: email
+                  value: "emmawilson@example.com"
+              - column:
+                  name: dob
+                  value: "1988-09-05"
+              - column:
+                  name: created_at
+                  valueDate: "2025-05-10T11:30:00"
+              - column:
+                  name: last_login
+                  valueDate: "2025-05-10T12:30:00"
+
+        - insert:
+            tableName: account
+            columns:
+              - column:
+                  name: firstname
+                  value: "Michael"
+              - column:
+                  name: lastname
+                  value: "Clark"
+              - column:
+                  name: username
+                  value: "michaelclark"
+              - column:
+                  name: password
+                  value: "mike2025"
+              - column:
+                  name: email
+                  value: "michaelclark@example.com"
+              - column:
+                  name: dob
+                  value: "1995-11-22"
+              - column:
+                  name: created_at
+                  valueDate: "2025-05-10T12:00:00"
+              - column:
+                  name: last_login
+                  valueDate: "2025-05-10T13:00:00"

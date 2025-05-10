@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "dad765f1-76a6-40ed-9461-ba22102b5c76",
+		"name": "spring-ai-openai-mcp-client-postgresql",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Basic-Chat",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Is there anyone with firstname John in account? If so what is date of birth or dob?"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/mcp/client/postgresql/basic-chat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"mcp",
+						"client",
+						"postgresql",
+						"basic-chat"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
