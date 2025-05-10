@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "7b41801b-99e4-4766-9d15-fb590f9ec9f4",
+		"name": "spring-ai-openai-tool-calling",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Basic-Chat-No-Tooling",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Give Lat and Lon in two digit integer format Boston give no space after comma. do not use any words"
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/toolcalling/basic-chat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"toolcalling",
+						"basic-chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic-Date-Time-With-Tool-Calling",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/toolcalling/date-time",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"toolcalling",
+						"date-time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set-Alarm",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/toolcalling/set-alarm?time=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"toolcalling",
+						"set-alarm"
+					],
+					"query": [
+						{
+							"key": "time",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tomorrow-Day",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/toolcalling/tomorrow-day",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"toolcalling",
+						"tomorrow-day"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Current-Weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/toolcalling/current-weather?city=California",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"toolcalling",
+						"current-weather"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "California"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Current-Weather-Without-Tool-Calling",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/toolcalling/current-weather-without-tool-calling",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"toolcalling",
+						"current-weather-without-tool-calling"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Basic-Date-Time-Without-Tool-Calling",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/toolcalling/date-time-without-tool-calling",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"toolcalling",
+						"date-time-without-tool-calling"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
