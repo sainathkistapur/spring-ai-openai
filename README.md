@@ -6,3 +6,6 @@ Before using any of the examples under this repository please make sure you regi
 
 OpenAI Platform: https://platform.openai.com/docs/overview
 
+### References
+-  [Spring AI](https://docs.spring.io/spring-ai/reference/1.0/api/chat/openai-chat.html)
+
