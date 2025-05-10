@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "filesystem-mcp-test": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/sainathkistapur/root/root-from-mac/root/work/github-projects/sainathkistapur/spring-ai-openai/openai.mcp.client.filesystem/mcp-filesystem-folder"
+      ]
+    }
+  }
+}
