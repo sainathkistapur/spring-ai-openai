@@ -17,8 +17,18 @@ Replace the "<your_openai_api_key>" placeholder with your actual Open AI API Key
 
 cURL
 ```
-
+curl --location --request GET 'http://localhost:8080/springai/openai/mcp/client/filesystem/basic-chat' \
+--header 'Content-Type: text/plain' \
+--data-raw 'what files are in the mcp-filesystem-folder.'
 ```
+
+
+#### Other Prompts to try:
+
+- `List all the firstnames in json format from the account.`
+- `How many records are in the first file in the mcp-filesystem-folder`
+- `List all the records from the first file in the mcp-filesystem-folder`
+- `What is the last name of Ben from the employee.json file in the mcp-filesystem-folder`
 
 ### References
 -  [Spring AI](https://docs.spring.io/spring-ai/reference/1.0/api/chat/openai-chat.html)

@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "b60ab7df-455a-462d-9c89-cff592b0d2b4",
+		"name": "spring-ai-openai-mcp-client-filesystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Basic-Chat",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "what files are in the mcp-filesystem-folder."
+				},
+				"url": {
+					"raw": "http://localhost:8080/springai/openai/mcp/client/filesystem/basic-chat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"springai",
+						"openai",
+						"mcp",
+						"client",
+						"filesystem",
+						"basic-chat"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
