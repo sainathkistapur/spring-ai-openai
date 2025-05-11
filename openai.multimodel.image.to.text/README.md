@@ -20,4 +20,4 @@ cURL - Simple Text to Image Generation - The image is stored in the `resources/i
 curl --location --request GET 'http://localhost:8080/springai/openai/multimodel/image-to-text'
 ```
 
-Response: you will a description of the image that is sent in the prompt.
+Response: you will get a description of the image that is sent in the prompt.
