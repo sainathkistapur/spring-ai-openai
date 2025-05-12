@@ -33,4 +33,6 @@ curl --location --request GET 'http://localhost:8080/springai/openai/embedding/c
 --data-raw 'Tell me a joke'
 ```
 
+
+
 Response: Will be an embedded vector but this time generated using custom OpenAI model. 
