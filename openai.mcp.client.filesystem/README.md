@@ -26,7 +26,6 @@ curl --location --request GET 'http://localhost:8080/springai/openai/mcp/client/
 
 #### Other Prompts to try:
 
-- `List all the firstnames in json format from the account.`
 - `How many records are in the first file in the mcp-filesystem-folder`
 - `List all the records from the first file in the mcp-filesystem-folder`
 - `What is the last name of Ben from the employee.json file in the mcp-filesystem-folder`
