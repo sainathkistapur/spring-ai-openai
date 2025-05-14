@@ -24,7 +24,7 @@ public class McpClientFilesystemServerController {
                     .call()
                     .content();
         } catch (Exception e) {
-            log.error("Failed to perform the request: " + e.getSuppressed());
+            log.error("Failed to perform the request: " + e.getMessage());
             return e.getMessage();
         }
     }
