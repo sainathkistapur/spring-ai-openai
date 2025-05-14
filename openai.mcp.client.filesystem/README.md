@@ -5,6 +5,7 @@ Application to demonstrate the Spring AI integration with OpenAI and perform act
 ## Running the Application 
 - Make sure you've registered with the OpenAI and topped up you account with some credit.
 - Obtain the API key from your OpenAI account
+- Change the `<absolute-path-to-the-application-folder>` in the `mcp-servers.json` file to point to the location where you are running this application.
 
 ### Run Command
 ```
