@@ -15,3 +15,10 @@ spring:
           enabled: true
         stdio:
           servers-configuration: classpath:mcp-servers.json
+
+  docker:
+    compose:
+      lifecycle-management: start-and-stop
+      stop:
+        command: down
+        timeout: 1m
