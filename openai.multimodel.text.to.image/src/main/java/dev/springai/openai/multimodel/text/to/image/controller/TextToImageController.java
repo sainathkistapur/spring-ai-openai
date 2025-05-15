@@ -26,7 +26,6 @@ public class TextToImageController {
                         .height(1024)
                         .width(1024)
                         .quality("hd")
-                        .withN(1)
                         .build());
 
         Image image = openAiImageModel.call(imagePrompt).getResult().getOutput();
