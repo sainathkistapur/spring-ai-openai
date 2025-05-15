@@ -9,19 +9,6 @@ import org.springframework.ai.chat.client.advisor.api.CallAdvisorChain;
 @Slf4j
 public class LoggingAdvisor implements CallAdvisor {
 
-
-//    @Override
-//    public AdvisedResponse aroundCall(AdvisedRequest advisedRequest, CallAroundAdvisorChain chain) {
-//        log.info("BEFORE: {}", advisedRequest);
-//
-//        AdvisedResponse advisedResponse = chain.nextAroundCall(advisedRequest);
-//
-//        log.info("AFTER: {}", advisedResponse);
-//
-//        return advisedResponse;
-//    }
-
-    @Override
     public String getName() {
         return this.getClass().getSimpleName();
     }
