@@ -2,16 +2,17 @@ package dev.springai.openai.rag.etl.service.json;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.ai.chat.model.ChatModel;
-import org.springframework.ai.chat.transformer.KeywordMetadataEnricher;
-import org.springframework.ai.chat.transformer.SummaryMetadataEnricher;
-import org.springframework.ai.chat.transformer.SummaryMetadataEnricher.SummaryType;
 import org.springframework.ai.document.Document;
+import org.springframework.ai.model.transformer.KeywordMetadataEnricher;
+import org.springframework.ai.model.transformer.SummaryMetadataEnricher;
 import org.springframework.ai.transformer.splitter.TokenTextSplitter;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.jdbc.core.simple.JdbcClient;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+
+import static org.springframework.ai.model.transformer.SummaryMetadataEnricher.*;
 
 @Component
 @RequiredArgsConstructor

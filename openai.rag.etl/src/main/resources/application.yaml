@@ -18,7 +18,6 @@ spring:
         distance-type: COSINE_DISTANCE
         initialize-schema: true
         dimensions: 1536
-        batching-strategy: TOKEN_COUNT # Optional: Controls how documents are batched for embedding
         max-document-batch-size: 10000 # Optional: Maximum number of documents per batch
 
   datasource:
@@ -28,7 +27,10 @@ spring:
 
   docker:
     compose:
-      lifecycle-management: START_AND_STOP
+      lifecycle-management: start-and-stop
+      stop:
+        command: down
+        timeout: 1m
 
 management:
   endpoints:
