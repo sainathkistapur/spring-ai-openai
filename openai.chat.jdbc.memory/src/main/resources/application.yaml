@@ -8,3 +8,15 @@ spring:
       chat:
         options:
           model: gpt-4o
+    chat:
+      memory:
+        repository:
+          jdbc:
+            initialize-schema: always
+
+  docker:
+    compose:
+      lifecycle-management: start-and-stop
+      stop:
+        command: down
+        timeout: 1m

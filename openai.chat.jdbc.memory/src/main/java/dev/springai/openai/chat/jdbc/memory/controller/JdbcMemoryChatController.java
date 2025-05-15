@@ -2,10 +2,8 @@ package dev.springai.openai.chat.jdbc.memory.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.messaging.handler.annotation.Header;
+import org.springframework.ai.chat.memory.ChatMemory;
 import org.springframework.web.bind.annotation.*;
-
-import static org.springframework.ai.chat.client.advisor.AbstractChatMemoryAdvisor.CHAT_MEMORY_CONVERSATION_ID_KEY;
 
 @RestController
 @RequestMapping("/springai/openai/chat/jdbc-memory")
@@ -26,7 +24,7 @@ public class JdbcMemoryChatController {
     public String chatWithJdbcMemory(@RequestBody String prompt,
                                      @RequestHeader(value = "conversationId") String conversationId) {
         return jdbcMemoryChatClient.prompt(prompt).advisors(
-                advisorSpec -> advisorSpec.param(CHAT_MEMORY_CONVERSATION_ID_KEY, conversationId))
+                advisorSpec -> advisorSpec.param(ChatMemory.CONVERSATION_ID, conversationId))
                 .call().content();
     }
 
