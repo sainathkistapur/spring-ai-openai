@@ -1,25 +1,25 @@
 package dev.springai.openai.chat.advisors.advisor;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.ai.chat.client.advisor.api.AdvisedRequest;
-import org.springframework.ai.chat.client.advisor.api.AdvisedResponse;
-import org.springframework.ai.chat.client.advisor.api.CallAroundAdvisor;
-import org.springframework.ai.chat.client.advisor.api.CallAroundAdvisorChain;
+import org.springframework.ai.chat.client.ChatClientRequest;
+import org.springframework.ai.chat.client.ChatClientResponse;
+import org.springframework.ai.chat.client.advisor.api.CallAdvisor;
+import org.springframework.ai.chat.client.advisor.api.CallAdvisorChain;
 
 @Slf4j
-public class LoggingAdvisor implements CallAroundAdvisor {
+public class LoggingAdvisor implements CallAdvisor {
 
 
-    @Override
-    public AdvisedResponse aroundCall(AdvisedRequest advisedRequest, CallAroundAdvisorChain chain) {
-        log.info("BEFORE: {}", advisedRequest);
-
-        AdvisedResponse advisedResponse = chain.nextAroundCall(advisedRequest);
-
-        log.info("AFTER: {}", advisedResponse);
-
-        return advisedResponse;
-    }
+//    @Override
+//    public AdvisedResponse aroundCall(AdvisedRequest advisedRequest, CallAroundAdvisorChain chain) {
+//        log.info("BEFORE: {}", advisedRequest);
+//
+//        AdvisedResponse advisedResponse = chain.nextAroundCall(advisedRequest);
+//
+//        log.info("AFTER: {}", advisedResponse);
+//
+//        return advisedResponse;
+//    }
 
     @Override
     public String getName() {
@@ -29,5 +29,16 @@ public class LoggingAdvisor implements CallAroundAdvisor {
     @Override
     public int getOrder() {
         return 0;
+    }
+
+    @Override
+    public ChatClientResponse adviseCall(ChatClientRequest chatClientRequest, CallAdvisorChain callAdvisorChain) {
+        log.info("BEFORE: {}", chatClientRequest);
+
+        ChatClientResponse chatClientResponse = callAdvisorChain.nextCall(chatClientRequest);
+
+        log.info("AFTER: {}", chatClientResponse);
+
+        return chatClientResponse;
     }
 }
