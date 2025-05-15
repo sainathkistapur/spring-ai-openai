@@ -27,7 +27,7 @@ curl --location --request GET 'http://localhost:8080/springai/openai/basic-chat/
 
 ##### Check the actuator endpoints
 List of available metrics: 
-`http://localhost:8080/actuator/metrics/`
+`http://localhost:8080/actuator/metrics`
 
 You are particularly interested in these:
 
@@ -43,6 +43,6 @@ You are particularly interested in these:
 
 ##### Check the tracing on Zipkin 
 
-`http://localhost:9411/zipkin/`
+`http://localhost:9411/zipkin`
 
 
