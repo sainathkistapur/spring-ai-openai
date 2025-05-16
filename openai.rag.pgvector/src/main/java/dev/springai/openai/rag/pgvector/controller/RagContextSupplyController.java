@@ -3,9 +3,7 @@ package dev.springai.openai.rag.pgvector.controller;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.ai.chat.client.advisor.QuestionAnswerAdvisor;
 import org.springframework.ai.chat.model.ChatModel;
-import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.chat.prompt.PromptTemplate;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.SearchRequest;
@@ -53,9 +51,11 @@ public class RagContextSupplyController {
 
     @GetMapping("/with-rag-prompt-template")
     public String withRagPromptTemplate(@RequestBody String input) {
-        PromptTemplate promptTemplate = new PromptTemplate(PROMPT_STRING
-                , Map.of("input", input, "documents", getContextDataFromVectorStore(input)));
 
+        PromptTemplate promptTemplate =PromptTemplate.builder()
+                .template(PROMPT_STRING)
+                .variables(Map.of("input", input, "documents", getContextDataFromVectorStore(input)))
+                .build();
         return chatModel.call(promptTemplate.create()).getResult().getOutput().getText();
     }
 

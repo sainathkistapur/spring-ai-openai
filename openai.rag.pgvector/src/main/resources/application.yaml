@@ -25,4 +25,7 @@ spring:
 
   docker:
     compose:
-      lifecycle-management: START_AND_STOP
+      lifecycle-management: start-and-stop
+      stop:
+        command: down
+        timeout: 1m
