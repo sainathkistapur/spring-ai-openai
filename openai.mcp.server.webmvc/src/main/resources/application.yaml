@@ -1,0 +1,12 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: springai.openai.mcp.server.webmvc
+
+  ai:
+    mcp:
+      server:
+        name: custom-mcp-server-flight-info
+        version: 1.0.0
+        type: SYNC

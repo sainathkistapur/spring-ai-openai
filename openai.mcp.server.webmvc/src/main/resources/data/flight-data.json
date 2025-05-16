@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "airline": "Southwest Airlines",
+    "airlineCode": "WN",
+    "flightNumber": "WN9004",
+    "departure": "Los Angeles International",
+    "arrival": "San Francisco International",
+    "departureDate": "11/12/2024",
+    "departureTime": "09:15",
+    "arrivalDate": "05-07-2023",
+    "arrivalTime": "19:45"
+  },
+  {
+    "id": 2,
+    "airline": "Iberia",
+    "airlineCode": "IB",
+    "flightNumber": "IB9562",
+    "departure": "Adolfo Suárez Madrid–Barajas",
+    "arrival": "Charles de Gaulle",
+    "departureDate": "25/06/2023",
+    "departureTime": "16:30",
+    "arrivalDate": "11-08-2023",
+    "arrivalTime": "13:15"
+  },
+  {
+    "id": 3,
+    "airline": "Aeroméxico",
+    "airlineCode": "AM",
+    "flightNumber": "AM9131",
+    "departure": "Benito Juárez International",
+    "arrival": "O'Hare International",
+    "departureDate": "02/01/2025",
+    "departureTime": "09:30",
+    "arrivalDate": "22-10-2023",
+    "arrivalTime": "19:30"
+  },
+  {
+    "id": 4,
+    "airline": "Qatar Airways",
+    "airlineCode": "QR",
+    "flightNumber": "QR1033",
+    "departure": "Hamad International",
+    "arrival": "Bole International",
+    "departureDate": "10/02/2025",
+    "departureTime": "20:45",
+    "arrivalDate": "30-03-2023",
+    "arrivalTime": "09:00"
+  },
+  {
+    "id": 5,
+    "airline": "South African Airways",
+    "airlineCode": "SA",
+    "flightNumber": "SA8516",
+    "departure": "O.R. Tambo International",
+    "arrival": "Charles de Gaulle",
+    "departureDate": "03/02/2023",
+    "departureTime": "16:30",
+    "arrivalDate": "28-05-2024",
+    "arrivalTime": "08:45"
+  },
+  {
+    "id": 6,
+    "airline": "Alitalia",
+    "airlineCode": "AZ",
+    "flightNumber": "AZ1132",
+    "departure": "Leonardo da Vinci International",
+    "arrival": "John F. Kennedy International",
+    "departureDate": "09/03/2023",
+    "departureTime": "17:45",
+    "arrivalDate": "22-01-2024",
+    "arrivalTime": "16:45"
+  },
+  {
+    "id": 7,
+    "airline": "Air France",
+    "airlineCode": "AF",
+    "flightNumber": "AF3443",
+    "departure": "Charles de Gaulle",
+    "arrival": "Frankfurt Airport",
+    "departureDate": "14/05/2023",
+    "departureTime": "12:00",
+    "arrivalDate": "30-06-2023",
+    "arrivalTime": "19:15"
+  },
+  {
+    "id": 8,
+    "airline": "Southwest Airlines",
+    "airlineCode": "WN",
+    "flightNumber": "WN9434",
+    "departure": "Los Angeles International",
+    "arrival": "San Francisco International",
+    "departureDate": "12/09/2024",
+    "departureTime": "13:15",
+    "arrivalDate": "10-10-2022",
+    "arrivalTime": "06:30"
+  },
+  {
+    "id": 9,
+    "airline": "KLM Royal Dutch Airlines",
+    "airlineCode": "KL",
+    "flightNumber": "KL2423",
+    "departure": "Amsterdam Airport Schiphol",
+    "arrival": "Los Angeles International",
+    "departureDate": "18/02/2024",
+    "departureTime": "18:15",
+    "arrivalDate": "27-11-2024",
+    "arrivalTime": "19:45"
+  },
+  {
+    "id": 10,
+    "airline": "Thai Airways",
+    "airlineCode": "TG",
+    "flightNumber": "TG8538",
+    "departure": "Suvarnabhumi",
+    "arrival": "Changi",
+    "departureDate": "13/11/2024",
+    "departureTime": "06:00",
+    "arrivalDate": "13-08-2023",
+    "arrivalTime": "11:30"
+  }
+]
