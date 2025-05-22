@@ -17,7 +17,7 @@ public class FlightInfoTools {
     private final FlightInfoService flightInfoService;
 
     @Tool(name = "getAllFlights", description = "Get a list of all flights")
-    public List<FlightInfo> getAllCourses() {
+    public List<FlightInfo> getAllFlights() {
         return flightInfoService.getAllFlights();
     }
 }
