@@ -33,13 +33,7 @@ curl --location --request GET 'http://localhost:8080/springai/openai/toolcalling
 ```
 Response: Gives you current date and time of you location.
 
-**cURL - 3 Set alarm with tool calling**
-```
-curl --location --request GET 'http://localhost:8080/springai/openai/toolcalling/set-alarm?time=10'
-```
-Response: I have set an alarm for 10 minutes from now.
-
-**cURL - 4 Get tomorrow's day with tool calling**
+**cURL - 3 Get tomorrow's day with tool calling**
 ```
 curl --location --request GET 'http://localhost:8080/springai/openai/toolcalling/tomorrow-day'
 ```

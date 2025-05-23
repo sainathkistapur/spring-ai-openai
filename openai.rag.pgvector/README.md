@@ -36,7 +36,7 @@ Replace the "<your_openai_api_key>" placeholder with your actual Open AI API Key
 ```
 curl --location --request GET 'http://localhost:8080/springai/openai/rag/pgvector/without-rag-context' \
 --header 'Content-Type: text/plain' \
---data-raw 'summaries Economic & Fiscal Outlook the SPRING STATEMENT 2025 UK'
+--data-raw 'Summaries Policy Decisions from SPRING STATEMENT 2025 UK'
 ```
 Response: 
 - Similar response like: I'm sorry, but I can't provide a summary...
@@ -45,17 +45,15 @@ Response:
 ```
 curl --location --request GET 'http://localhost:8080/springai/openai/rag/pgvector/with-rag-prompt-template' \
 --header 'Content-Type: text/plain' \
---data-raw 'what is the Public sector net financial liabilities1 in 2024 from SPRING STATEMENT 2025 UK'
+--data-raw 'Summaries Policy Decisions from SPRING STATEMENT 2025 UK'
 ```
-**Note:** You can open the company profile PDF file in the resources file and ask question based on the that.
-Response:
 - You will now start getting the information based on the PDF file.
 
 ##### cURL - Scenario 3: QuestionAndAnswer Advisor with providing the RAG context.
 ```
 curl --location --request GET 'http://localhost:8080/springai/openai/rag/pgvector/with-rag-qa-advisor' \
 --header 'Content-Type: text/plain' \
---data-raw 'what is the Public sector net financial liabilities1 in 2024 from SPRING STATEMENT 2025 UK'
+--data-raw 'Summaries Policy Decisions from SPRING STATEMENT 2025 UK'
 ```
 Response:
 - You will now start getting the information based on the PDF file.
@@ -64,7 +62,7 @@ Response:
 ```
 curl --location --request GET 'http://localhost:8080/springai/openai/rag/pgvector/with-rag-rag-advisor' \
 --header 'Content-Type: text/plain' \
---data-raw 'what is the Public sector net financial liabilities1 in 2024 from SPRING STATEMENT 2025 UK'
+--data-raw 'Summaries Policy Decisions from SPRING STATEMENT 2025 UK'
 ```
 Response:
 - You will now start getting the information based on the PDF file.

@@ -1,5 +1,6 @@
 package dev.springai.openai.rag.pgvector.config;
 
+import dev.springai.openai.rag.pgvector.advisor.LoggingAdvisor;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.vectorstore.QuestionAnswerAdvisor;
 import org.springframework.ai.rag.advisor.RetrievalAugmentationAdvisor;
@@ -21,14 +22,17 @@ public class OpenAiConfig {
     @Bean
     public ChatClient ragChatClientWithQaAdvisor(ChatClient.Builder chatClientBuilder, VectorStore vectorStore) {
         return chatClientBuilder
-                .defaultAdvisors(QuestionAnswerAdvisor.builder(vectorStore).build())
+                .defaultAdvisors(
+                        new LoggingAdvisor(),
+                        QuestionAnswerAdvisor.builder(vectorStore).build()
+                , new LoggingAdvisor())
                 .build();
     }
 
     @Bean
     public ChatClient ragChatClientWithRagAdvisor(ChatClient.Builder chatClientBuilder, VectorStore vectorStore) {
         return chatClientBuilder
-                .defaultAdvisors(
+                .defaultAdvisors(new LoggingAdvisor(),
                         RetrievalAugmentationAdvisor.builder()
                                 .documentRetriever(VectorStoreDocumentRetriever.builder()
                                         .vectorStore(vectorStore)
